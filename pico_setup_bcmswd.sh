@@ -3,6 +3,9 @@
 # Exit on error
 set -e
 
+# this version is for a headless rpi
+# no vscode and uses rpi gpio for swd vice picoprobe
+
 if grep -q Raspberry /proc/cpuinfo; then
     echo "Running on a Raspberry Pi"
 else
